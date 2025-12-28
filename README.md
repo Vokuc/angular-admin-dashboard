@@ -1,27 +1,35 @@
-# AngularAdminDashboard
+# Angular Admin Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+A real-world Angular admin dashboard demonstrating authentication, protected routes, API integration, forms, modals, and clean project architecture.
 
-## Development server
+## Features
+- JWT-based authentication
+- Protected routes using route guards
+- HTTP interceptors for auth headers
+- CRUD operations with a mock API
+- Reactive forms with validation
+- Modal-driven UI flows
+- Role-based UI permissions
+- Environment-based configuration
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tech Stack
+- Angular
+- TypeScript
+- RxJS
+- Bootstrap / Tailwind (pick one)
+- JSON Server (mock backend)
 
-## Code scaffolding
+## Project Structure
+src/app/
+- core/        # auth, guards, interceptors
+- shared/      # reusable components & services
+- features/    # feature-based modules
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
+1. Clone the repo
+2. npm install
+3. npm run start
+4. npm run api
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Why This Project Exists
+This project mirrors how Angular is used in real production environments, focusing on maintainable structure, clean data flow, and practical feature implementation rather than toy examples.
